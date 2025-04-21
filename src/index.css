@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+
+@layer base {
+    html {
+      font-family:  sans-serif;
+    }
+  }
+
+/* انیمیشن برای اسپن اول */
+@keyframes spanOneColorSwap {
+    0%, 50% {
+      color: rgb(14, 174, 123);
+    }
+    100% {
+      color: rgba(45, 106, 92, 0.853);
+    }
+  }
+  
+  /* انیمیشن برای اسپن دوم */
+  @keyframes spanTwoColorSwap {
+    0%, 50% {
+      color: rgb(14, 174, 123) ;
+    }
+    100% {
+      color: rgba(45, 106, 92, 0.853);
+    }
+  }
+  
+  /* کلاس‌ها برای هر اسپن */
+  .animate-spanOne {
+    animation: spanOneColorSwap 1s infinite;
+  }
+  
+  .animate-spanTwo {
+    animation: spanTwoColorSwap 1.5s infinite;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1.5s ease-out;
+  }
+
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 1s ease-in-out;
+  }
+
+  @font-face {
+    font-family: 'font1';
+    src: url('/fonts/Gulzar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+  }
+ #mainTitle {
+    font-family: 'font1', sans-serif !important;
+ 
+  }
+
+
+
+  @font-face {
+    font-family: 'font2';
+    src: url('/fonts/IBMPlexSansArabic-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  #titleKhadamat {
+    font-family: 'font2';
+  }
+
+  
+  #priceList {
+    font-family: 'font2';
+    font-size:1.3rem ;
+  }
+ 
+  #detailsPages {
+    font-family: 'font2';
+  }
+
